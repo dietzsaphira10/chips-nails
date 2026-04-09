@@ -4,12 +4,12 @@ import { useRef, useState, useEffect } from "react";
 // --- MEDIEN IMPORTS (AUS DEM SRC/ASSETS ORDNER) ---
 import renovierungVideoUrl from "../assets/ChipsNailsVideo.mp4";
 
-import bild1 from "../assets/ChipsNailsStudio4.JPG.webp";
-import bild2 from "../assets/ChipsNailsStudio10.JPG.webp"; 
-import bild3 from "../assets/ChipsNailsStudio5.JPG.webp"; 
-import bild4 from "../assets/ChipsNailsStudio8.JPG.webp"; 
+import bild1 from "../assets/ChipsNailsStudio8.JPG.webp";
+import bild2 from "../assets/ChipsNailsStudio5.JPG.webp"; 
+import bild3 from "../assets/ChipsNailsStudio9.JPG.webp"; 
+import bild4 from "../assets/ChipsNailsStudio10.JPG.webp"; 
 import bild5 from "../assets/ChipsNailsStudio7.JPG.webp"; 
-import bild6 from "../assets/ChipsNailsStudio6.JPG.webp"; 
+import bild6 from "../assets/ChipsNailsStudio3.JPG.webp"; 
 
 // --- KLEINER HELFER FÜR DIE BILDER-SLIDER ---
 const ImageSlider = ({ images, className }) => {
