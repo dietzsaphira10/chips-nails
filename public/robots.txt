@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Wegweiser zur Sitemap für Google und Bing
+Sitemap: https://chipsnailssingen.de/sitemap.xml
