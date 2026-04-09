@@ -30,11 +30,14 @@ const ImageSlider = ({ images, className }) => {
       >
         {images.map((src, index) => (
           <img 
-            key={index}
-            src={src} 
-            alt={`Studio Detail ${index + 1}`} 
-            className="w-full h-full object-cover shrink-0 [image-orientation:from-image]" 
-          />
+  key={index}
+  src={src} 
+  alt={`Studio Detail ${index + 1}`} 
+  /* HIER IST DER MAGISCHE TRICK: Das erste Bild lädt sofort (eager), alle anderen verzögert (lazy) */
+  loading={index === 0 ? "eager" : "lazy"}
+  decoding="async" 
+  className="w-full h-full object-cover shrink-0 [image-orientation:from-image]" 
+/>
         ))}
       </div>
       {/* Instagram-Dots */}
