@@ -85,7 +85,7 @@ export default function HeroSection() {
               Termin buchen
             </Link>
             <Link
-              to="/galerie"
+              to="/gallery"
               className="px-5 py-2.5 md:px-8 md:py-4 border border-white/20 text-white text-[8px] md:text-xs uppercase tracking-widest rounded-full hover:bg-white/5 hover:border-white/50 text-center transition-all w-fit"
             >
               Galerie entdecken
