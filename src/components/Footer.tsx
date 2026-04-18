@@ -1,4 +1,4 @@
-import { Instagram, Facebook, MessageCircle } from "lucide-react"; // MessageCircle für WhatsApp importiert
+import { Instagram, Facebook, MessageCircle } from "lucide-react"; 
 import { Link } from "react-router-dom";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -8,6 +8,10 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 );
 
 const Footer = () => {
+  const openCookieSettings = () => {
+    window.dispatchEvent(new CustomEvent("open-cookie-settings"));
+  };
+
   return (
     <footer className="bg-white border-t border-black/5 py-16 px-6 md:px-12 text-black mt-20">
       
@@ -64,15 +68,17 @@ const Footer = () => {
               <a href="https://www.facebook.com/chipsnails" target="_blank" rel="noreferrer" className="text-black/50 hover:text-black transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              {/* WhatsApp Icon hinzugefügt */}
               <a href="https://wa.me/4915203389999" target="_blank" rel="noreferrer" className="text-black/50 hover:text-black transition-colors">
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <Link to="/impressum" onClick={() => window.scrollTo(0, 0)} className="uppercase text-[9px] tracking-[0.1em] text-black/40 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 300 }}>Impressum</Link>
             <Link to="/datenschutz" onClick={() => window.scrollTo(0, 0)} className="uppercase text-[9px] tracking-[0.1em] text-black/40 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 300 }}>Datenschutz</Link>
+            <button onClick={openCookieSettings} className="uppercase text-[9px] tracking-[0.1em] text-black/40 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 300 }}>
+              Cookies
+            </button>
           </div>
         </div>
 
