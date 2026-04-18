@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const randomDates = [
   "27. Feb 2026", "01. März 2026", "03. März 2026", "05. März 2026",
@@ -43,6 +44,10 @@ const Gallery = () => {
 
   return (
     <main className="bg-white min-h-screen text-black font-body relative">
+      <SEO 
+        title="Galerie & Inspiration | Nagelstudio Singen" 
+        description="Lass dich von unserer Nail Art Galerie inspirieren! Entdecke wunderschöne Gelnägel, Wimpern und Fußpflege-Ergebnisse von Chip's Nails in Singen." 
+      />
       <Navbar />
 
       {/* --- LIGHTBOX POP-UP --- */}
@@ -64,7 +69,7 @@ const Gallery = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               src={selectedImg} 
-              alt="Meisterwerk Großansicht"
+              alt="Meisterwerk Großansicht - Nagelstudio Singen"
               className="max-w-full max-h-[85vh] object-contain rounded-sm shadow-2xl"
               onClick={(e) => e.stopPropagation()} 
             />
@@ -110,14 +115,16 @@ const Gallery = () => {
                 ) : (
                   <>
                     <div className="w-full aspect-[3/4] overflow-hidden bg-black/5 relative shadow-sm">
-                      {/* Zoom-Effekt beim Hover über die "group" */}
                       <img 
                         src={item.src} 
-                        alt={`Look ${item.id}`} 
+                        alt={`Hochwertiges Nageldesign in Singen - Look ${item.id}`} 
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
                       />
-                      {/* Overlay beim Hover für mehr Fokus */}
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-500 flex items-center justify-center">
+                        <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-[10px] uppercase tracking-[0.3em] font-light text-center px-4 drop-shadow-md">
+                          Premium Nageldesign <br/> Singen
+                        </span>
+                      </div>
                     </div>
                     <div className="mt-5 flex justify-between items-end border-b border-black/5 pb-3">
                       <span className="font-body text-[10px] md:text-xs uppercase tracking-[0.2em] text-black/50">{item.date}</span>
