@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SEO from "@/components/SEO";
 
 const Datenschutz = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const Datenschutz = () => {
 
   return (
     <main className="bg-[#FDFCFB] min-h-screen text-black">
+<SEO title="Datenschutz | Chip's Nails & Beauty" description="Datenschutzerklärung von Chip's Nails & Beauty zum Umgang mit Ihren persönlichen Daten." />
       <Navbar />
       
       <section className="pt-40 pb-24 px-6 max-w-4xl mx-auto font-body">

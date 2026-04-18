@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SEO from "@/components/SEO";
 
 const headerBg = "/assets/gallery/Kontaktbanner.jpg";
 
 const Pedikuere = () => {
   return (
     <main className="bg-white min-h-screen text-black font-body">
+      <SEO 
+  title="Preise für Pediküre & Spa | Singen" 
+  description="Preisliste für kosmetische Fußpflege, Spa-Pediküre und Shellac für die Füße bei Chip's Nails & Beauty in Singen." 
+/>
       <Navbar />
       
       <section className="relative h-[45vh] min-h-[350px] mt-[80px] flex items-center justify-center overflow-hidden">

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Phone, MessageCircle, X } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const headerBg = "/assets/gallery/Kontaktbanner.jpg";
 
@@ -11,6 +12,10 @@ const Wimpern = () => {
 
   return (
     <main className="bg-white min-h-screen text-black font-body relative">
+      <SEO 
+  title="Preise für Wimpernverlängerung & Brows | Singen" 
+  description="Unsere Preise für Wimpernverlängerung, Wimpernlifting und Brow Lifting in Singen. Hochwertige Beauty-Behandlungen zu fairen Preisen." 
+/>
       <Navbar />
       
       {/* --- TERMIN POP-UP (MODAL) --- */}

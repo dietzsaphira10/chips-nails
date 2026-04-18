@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SEO from "@/components/SEO";
 
 const Impressum = () => {
   useEffect(() => {
@@ -10,6 +11,10 @@ const Impressum = () => {
 
   return (
     <main className="bg-[#FDFCFB] min-h-screen text-black">
+      // Impressum.tsx
+<SEO title="Impressum | Chip's Nails & Beauty" description="Impressum und rechtliche Angaben von Chip's Nails & Beauty in Singen." />
+
+
       <Navbar />
       
       <section className="pt-40 pb-24 px-6 max-w-4xl mx-auto font-body">

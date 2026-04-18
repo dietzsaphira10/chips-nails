@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SEO from "@/components/SEO";
 
 const l0 = "/assets/gallery/Kontaktbanner.jpg";
 
@@ -14,6 +15,10 @@ const BehandlungNagel = () => {
 
   return (
     <main className="bg-white min-h-screen text-black font-body">
+      <SEO 
+  title="Gelnägel & Nageldesign Singen | Chip's Nails" 
+  description="Perfekte Nagelmodellage, Gelnägel, Acryl und aufwendige Nail Art in Singen. Höchste Präzision und extrem lange Haltbarkeit ohne Liftings." 
+/>
       <Navbar />
       
       <section className="relative h-[45vh] min-h-[350px] mt-[80px] flex items-center justify-center overflow-hidden">

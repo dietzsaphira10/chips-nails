@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SEO from "@/components/SEO";
 
 const headerBg = "/assets/gallery/Kontaktbanner.jpg";
 
 const Nageldesign = () => {
   return (
     <main className="bg-white min-h-screen text-black font-body">
+      <SEO 
+  title="Preise für Nageldesign & Gelnägel | Singen" 
+  description="Unsere Preise für Neumodellage, Auffüllen, Shellac, Maniküre und Nail Art. Transparente Preisliste für dein Nagelstudio in Singen." 
+/>
       <Navbar />
       
       <section className="relative h-[45vh] min-h-[350px] mt-[80px] flex items-center justify-center overflow-hidden">

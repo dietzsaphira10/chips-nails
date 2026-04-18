@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, MapPin, Mail, ArrowRight, MessageCircle, X, GraduationCap } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -92,6 +93,10 @@ const Kontakt = () => {
 
   return (
     <main className="bg-[#F7F7F9] min-h-screen text-black relative">
+      <SEO 
+  title="Kontakt & Termin | Nagelstudio Singen" 
+  description="Vereinbare deinen Termin bei Chip's Nails & Beauty in Singen. Finde unsere Adresse, Öffnungszeiten und buche bequem online über Fresha." 
+/>
       <Navbar />
 
       <AnimatePresence>

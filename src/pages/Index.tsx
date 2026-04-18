@@ -21,9 +21,9 @@ const Index = () => {
       }}
     >
       <SEO 
-      title="Chip's Nails & Beauty | Dein Nagelstudio in Singen" 
-      description="Exklusives Nageldesign, professionelle Wimpernverlängerung und Spa-Pediküre in Singen (Hohentwiel). Jetzt Termin bei Chip's Nails buchen!" 
-    />
+  title="Nagelstudio Singen | Chip's Nails & Beauty" 
+  description="Dein exklusives Nagelstudio in Singen (Hohentwiel). Wir bieten professionelles Nageldesign, Gelnägel, Wimpernverlängerung & Pediküre. Jetzt Termin vereinbaren!" 
+/>
       <Navbar />
       
       {/* 1. Der große Einstiegsbanner */}

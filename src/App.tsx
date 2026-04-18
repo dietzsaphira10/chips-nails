@@ -14,7 +14,6 @@ import Gallery from "./pages/Gallery";
 import Datenschutz from "./pages/Datenschutz";
 import Impressum from "./pages/Impressum"; 
 import Kontakt from "./pages/Kontakt";
-import Angebot from "./pages/Angebot"; 
 
 // Journal & Geheime Admin-Seite
 import Journal from "./pages/Journal.tsx";
@@ -132,7 +131,7 @@ const App = () => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-    document.title = "Chip's Nails & Beauty | Singen";
+    document.title = "Nagelstudio Singen | Chip's Nails & Beauty";
   }, []);
   
   return (
@@ -146,7 +145,7 @@ const App = () => {
             
             {/* Popups und Banner, die auf JEDER Seite sichtbar sein sollen */}
             <DiscountPopup /> 
-            <CookieBanner /> {/* <--- HIER IST DEIN COOKIE BANNER! */}
+            <CookieBanner /> {}
 
             <Routes>
               <Route path="/" element={<Index />} />
@@ -156,7 +155,6 @@ const App = () => {
               <Route path="/kontakt" element={<Kontakt />} />
               <Route path="/journal" element={<Journal />} />
               <Route path="/adminjournal" element={<AdminJournal />} />
-              <Route path="/angebot" element={<Angebot />} />
               <Route path="/behandlung-nagel" element={<Nagelbehandlung />} />
               <Route path="/behandlung-wimpern" element={<Wimpernbehandlung />} />
               <Route path="/behandlung-fuss" element={<Fussbehandlung />} />

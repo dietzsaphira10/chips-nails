@@ -2,12 +2,17 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SEO from "@/components/SEO";
 
 const headerBg = "/assets/gallery/Kontaktbanner.jpg";
 
 const WimpernBehandlung = () => {
   return (
     <main className="bg-white min-h-screen text-black font-body">
+      <SEO 
+  title="Wimpernverlängerung & Lifting Singen | Chip's Nails" 
+  description="Professionelle Wimpernverlängerung (1:1 & Volumen) und Wimpernlifting in Singen. Für einen natürlichen oder dramatischen, atemberaubenden Augenaufschlag." 
+/>
       <Navbar />
 
       <section className="relative h-[45vh] min-h-[350px] mt-[80px] flex items-center justify-center overflow-hidden">
